@@ -35,5 +35,6 @@ jobs:
               mkdir vue-331
               cp docker-compose.yml vue-331/docker-compose.yml
               cd vue-331
+              docker-compose -H ${{ secrets.HOST_SERVER }} down
               docker-compose -H ${{ secrets.HOST_SERVER }} pull
               docker-compose -H ${{ secrets.HOST_SERVER }} up -d
