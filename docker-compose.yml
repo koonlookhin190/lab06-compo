@@ -3,4 +3,4 @@ services:
     web:
         image: "koonlookhin190/se331-lab06:latest"
         ports:
-            - 3401:80
+            - 8001:80
