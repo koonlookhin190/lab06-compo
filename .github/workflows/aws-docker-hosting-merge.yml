@@ -33,7 +33,7 @@ jobs:
         name: docker compose
         uses: alex-ac/github-action-ssh-docker-compose@master
         with:
-          ssh_host: ${{ secrets.HOSTS_ERVER }}
+          ssh_host: ${{ secrets.HOST_SERVER }}
           ssh_private_key: ${{ secrets.HOST_SSH_PRIVATE_KEY }}
           ssh_user: ${{ secrets.HOST_USER_NAME }}
           docker_compose_prefix: vue-331
